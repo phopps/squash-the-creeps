@@ -15,7 +15,21 @@ _global_script_class_icons={
 [application]
 
 config/name="Squash the Creeps (3D)"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
+
+[debug]
+
+settings/stdout/print_fps=true
+settings/stdout/verbose_stdout=true
+
+[display]
+
+window/tablet_driver="Windows Ink"
+
+[gui]
+
+theme/use_hidpi=true
 
 [mono]
 
@@ -23,5 +37,4 @@ project/assembly_name="Squash the Creeps (3D)"
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 quality/filters/msaa=3
