@@ -1,4 +1,4 @@
-# [Squash the Creeps](https://docs.godotengine.org/en/3.5/getting_started/first_3d_game/index.html)
+# [Squash the Creeps](https://docs.godotengine.org/en/stable/getting_started/first_3d_game/index.html)
 
 - [ ] **Setting up the game area**
   - [ ] Setting up the playable area
