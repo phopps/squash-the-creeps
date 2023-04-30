@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://20t738llt2lr"]
+[gd_scene load_steps=3 format=3 uid="uid://btsoq762svf4q"]
 
-[ext_resource type="PackedScene" uid="uid://dgsr831hixo72" path="res://art/player.glb" id="1_1ylq2"]
+[ext_resource type="PackedScene" uid="uid://dgsr831hixo72" path="res://art/player.glb" id="1_dy0km"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_tl8fa"]
 radius = 1.0
@@ -9,7 +9,7 @@ radius = 1.0
 
 [node name="Pivot" type="Node3D" parent="."]
 
-[node name="Character" parent="Pivot" instance=ExtResource("1_1ylq2")]
+[node name="Character" parent="Pivot" instance=ExtResource("1_dy0km")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
