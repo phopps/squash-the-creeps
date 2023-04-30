@@ -2,8 +2,8 @@
 
 - [x] **Setting up the game area**
 - [x] Setting up the playable area
-- [ ] **Player scene and input actions**
-- [ ] Creating input actions
+- [x] **Player scene and input actions**
+- [x] Creating input actions
 - [ ] **Moving the player with code**
 - [ ] Testing our player's movement
 - [ ] **Designing the mob scene**
