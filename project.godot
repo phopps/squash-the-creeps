@@ -10,14 +10,13 @@ config_version=5
 
 [application]
 
-config/name="Squash the Creeps (3D)"
-run/main_scene="res://Main.tscn"
+config/name="Squash"
 config/features=PackedStringArray("4.0")
 config/icon="res://icon.png"
 
 [dotnet]
 
-project/assembly_name="Squash the Creeps (3D)"
+project/assembly_name="Squash"
 
 [input]
 
