@@ -7,7 +7,7 @@
 - [x] **Moving the player with code**
 - [x] Testing our player's movement
 - [x] **Designing the mob scene**
-- [ ] Removing monsters off-screen
+- [x] Removing monsters off-screen
 - [ ] **Spawning monsters**
 - [ ] Creating the spawn path
 - [ ] Spawning monsters randomly
