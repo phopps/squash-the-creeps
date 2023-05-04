@@ -8,9 +8,9 @@
 - [x] Testing our player's movement
 - [x] **Designing the mob scene**
 - [x] Removing monsters off-screen
-- [ ] **Spawning monsters**
-- [ ] Creating the spawn path
-- [ ] Spawning monsters randomly
+- [x] **Spawning monsters**
+- [x] Creating the spawn path
+- [x] Spawning monsters randomly
 - [ ] **Jumping and squashing monsters**
 - [ ] Controlling physics interactions
 - [ ] Jumping
