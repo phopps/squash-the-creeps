@@ -1,16 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://btsoq762svf4q"]
+[gd_scene load_steps=4 format=3 uid="uid://cyt3yt2m7h23b"]
 
-[ext_resource type="PackedScene" uid="uid://dgsr831hixo72" path="res://art/player.glb" id="1_dy0km"]
+[ext_resource type="PackedScene" uid="uid://ctym6f4tbboex" path="res://art/player.glb" id="1_8kwcg"]
+[ext_resource type="Script" path="res://Player.cs" id="1_m6b45"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_tl8fa"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_w7ie8"]
 radius = 1.0
 
 [node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_m6b45")
 
 [node name="Pivot" type="Node3D" parent="."]
 
-[node name="Character" parent="Pivot" instance=ExtResource("1_dy0km")]
+[node name="Character" parent="Pivot" instance=ExtResource("1_8kwcg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-shape = SubResource("SphereShape3D_tl8fa")
+[node name="Collision" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_w7ie8")
