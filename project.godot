@@ -11,12 +11,17 @@ config_version=5
 [application]
 
 config/name="Squash"
-config/features=PackedStringArray("4.0")
+run/main_scene="res://Main.tscn"
+config/features=PackedStringArray("4.0", "C#")
 config/icon="res://icon.png"
 
 [dotnet]
 
 project/assembly_name="Squash"
+
+[editor]
+
+naming/scene_name_casing=1
 
 [input]
 
