@@ -41,9 +41,27 @@ mesh = SubResource("BoxMesh_3uuet")
 [node name="Player" parent="." instance=ExtResource("2_rh4ob")]
 
 [node name="Light" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.954475, -0.199233, 0.222, -0.101721, 0.482231, 0.870118, -0.280412, -0.853088, 0.440011, 0, 21.9675, 2.66212)
-light_color = Color(0.701961, 0.654902, 1, 1)
+transform = Transform3D(0.162489, -0.935093, -0.314959, -0.560731, -0.350159, 0.750313, -0.811898, 0.0546897, -0.581233, -229.98, 90.1992, -2.7611)
+light_color = Color(0, 0.643137, 0.862745, 1)
+light_energy = 3.486
+light_indirect_energy = 10.405
+light_volumetric_fog_energy = 10.946
 shadow_enabled = true
+shadow_blur = 0.0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(0.393637, 0, 0.919266, 0, 1, 0, -0.919266, 0, 0.393637, 87.1631, 35.5652, -43.0347)
+light_color = Color(0.862745, 0.164706, 0.623529, 1)
+light_energy = 15.162
+light_indirect_energy = 11.486
+light_volumetric_fog_energy = 8.676
+light_specular = 14.878
+shadow_enabled = true
+distance_fade_enabled = true
+distance_fade_begin = 759.57
+distance_fade_shadow = 2817.57
+distance_fade_length = 1311.26
+omni_range = 786.458
 
 [node name="CameraPivot" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
