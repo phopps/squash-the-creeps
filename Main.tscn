@@ -20,7 +20,7 @@ material = SubResource("StandardMaterial3D_so2uk")
 
 [sub_resource type="Curve3D" id="Curve3D_8nvs6"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -27.0942, 0, -9.36381, 0, 0, 0, 0, 0, 0, 27.3374, 0, -9.26652, 0, 0, 0, 0, 0, 0, 13.2796, 0, 10.1421, 0, 0, 0, 0, 0, 0, -13.6201, 0, 10.3367, 0, 0, 0, 0, 0, 0, -27.0942, 0, -9.36381),
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 12, 0, -8, 0, 0, 0, 0, 0, 0, 12, 0, 22, 0, 0, 0, 0, 0, 0, -12, 0, 22, 0, 0, 0, 0, 0, 0, -12, 0, -8, 0, 0, 0, 0, 0, 0, 12, 0, -8),
 "tilts": PackedFloat32Array(0, 0, 0, 0, 0)
 }
 point_count = 5
@@ -50,41 +50,43 @@ shadow_enabled = true
 shadow_blur = 0.0
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(0.393637, 0, 0.919266, 0, 1, 0, -0.919266, 0, 0.393637, 87.1631, 35.5652, -43.0347)
+transform = Transform3D(-0.196819, -0.866025, -0.459633, 0.3409, -0.5, 0.796108, -0.919266, 0, 0.393637, 52.1631, 16.5652, 1.9653)
 light_color = Color(0.862745, 0.164706, 0.623529, 1)
-light_energy = 15.162
+light_energy = 8.262
 light_indirect_energy = 11.486
 light_volumetric_fog_energy = 8.676
+light_size = 0.685
 light_specular = 14.878
 shadow_enabled = true
 distance_fade_enabled = true
-distance_fade_begin = 759.57
-distance_fade_shadow = 2817.57
-distance_fade_length = 1311.26
-omni_range = 786.458
+distance_fade_length = 120.7
+omni_range = 702.845
 
 [node name="CameraPivot" type="Marker3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.492424, 0.870356, 0, -0.870356, 0.492424, 0, 0, 0)
 
 [node name="Camera" type="Camera3D" parent="CameraPivot"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 19)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.140354, -3.9925, 22.1079)
+fov = 55.2
+size = 19.0
+near = 10.0
 
 [node name="Cylinders" type="Node3D" parent="."]
 
 [node name="Mesh" type="MeshInstance3D" parent="Cylinders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.1764, 0, -9.3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.176, 0, -9.3)
 mesh = SubResource("CylinderMesh_nucln")
 
 [node name="Mesh2" type="MeshInstance3D" parent="Cylinders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.176, 0, -9.3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.176, 0, -9.3)
 mesh = SubResource("CylinderMesh_nucln")
 
 [node name="Mesh3" type="MeshInstance3D" parent="Cylinders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.3764, 0, 10.3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.176, 0, 21.7)
 mesh = SubResource("CylinderMesh_nucln")
 
 [node name="Mesh4" type="MeshInstance3D" parent="Cylinders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.376, 0, 10.3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.176, 0, 21.7)
 mesh = SubResource("CylinderMesh_nucln")
 
 [node name="MobTimer" type="Timer" parent="."]
@@ -96,5 +98,11 @@ curve = SubResource("Curve3D_8nvs6")
 
 [node name="SpawnLocation" type="PathFollow3D" parent="SpawnPath"]
 transform = Transform3D(0.00178738, 0, 0.999998, 0, 1, 0, -0.999998, 0, 0.00178738, -27.0942, 0, -9.36381)
+
+[node name="Mob" parent="." instance=ExtResource("2_vkh27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.04037, 0, 0)
+
+[node name="Player2" parent="." instance=ExtResource("2_rh4ob")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.29379, -0.1, 0)
 
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
