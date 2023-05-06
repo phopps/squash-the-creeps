@@ -14,11 +14,11 @@
 - [x] **Jumping and squashing monsters**
 - [x] Controlling physics interactions
 - [x] Jumping
-- [ ] Squashing monsters
-- [ ] **Killing the player**
-- [ ] Hitbox with the Area node
-- [ ] Ending the game
-- [ ] Code checkpoint
+- [x] Squashing monsters
+- [x] **Killing the player**
+- [x] Hitbox with the Area node
+- [x] Ending the game
+- [x] Code checkpoint
 - [ ] **Score and replay**
 - [ ] Creating a UI theme
 - [ ] Keeping track of the score
