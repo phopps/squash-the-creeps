@@ -122,4 +122,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.04037, 0, 0)
 [node name="Player2" parent="." instance=ExtResource("2_rh4ob")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.29379, -0.1, 0)
 
+[connection signal="Hit" from="Player" to="." method="_on_player_hit"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
