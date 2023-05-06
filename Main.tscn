@@ -1,9 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://bbwckb3i7vjm8"]
+[gd_scene load_steps=13 format=3 uid="uid://bbwckb3i7vjm8"]
 
 [ext_resource type="Material" uid="uid://cji8horcjfpxh" path="res://art/pupil.material" id="1_5fsia"]
 [ext_resource type="Script" path="res://Main.cs" id="1_flc47"]
 [ext_resource type="PackedScene" uid="uid://btsoq762svf4q" path="res://Player.tscn" id="2_rh4ob"]
 [ext_resource type="PackedScene" uid="uid://4yjsxxvby5me" path="res://Mob.tscn" id="2_vkh27"]
+[ext_resource type="FontFile" uid="uid://c05cph6afw1wq" path="res://fonts/Montserrat-Medium.ttf" id="5_0lqy4"]
+[ext_resource type="Script" path="res://ScoreLabel.cs" id="6_g4gw0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0bti8"]
 size = Vector3(60, 2, 60)
@@ -24,6 +26,9 @@ _data = {
 "tilts": PackedFloat32Array(0, 0, 0, 0, 0)
 }
 point_count = 5
+
+[sub_resource type="Theme" id="Theme_k8b3o"]
+default_font = ExtResource("5_0lqy4")
 
 [node name="Main" type="Node"]
 script = ExtResource("1_flc47")
@@ -116,11 +121,30 @@ curve = SubResource("Curve3D_8nvs6")
 [node name="SpawnLocation" type="PathFollow3D" parent="SpawnPath"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -8)
 
-[node name="Mob" parent="." instance=ExtResource("2_vkh27")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.04037, 0, 0)
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="Player2" parent="." instance=ExtResource("2_rh4ob")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.29379, -0.1, 0)
+[node name="ScoreLabel" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 101.0
+offset_bottom = 66.0
+theme = SubResource("Theme_k8b3o")
+theme_override_colors/font_color = Color(1, 0, 0.639216, 1)
+theme_override_colors/font_shadow_color = Color(0.145549, 0, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 9
+theme_override_constants/shadow_outline_size = 9
+theme_override_fonts/font = ExtResource("5_0lqy4")
+theme_override_font_sizes/font_size = 30
+text = "Score: 0"
+script = ExtResource("6_g4gw0")
 
 [connection signal="Hit" from="Player" to="." method="_on_player_hit"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
