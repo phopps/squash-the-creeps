@@ -4,6 +4,19 @@ public partial class Main : Node
 {
     [Export] public PackedScene MobScene { get; set; }
 
+    public override void _Ready()
+    {
+        GetNode<Control>("UI/Retry").Hide();
+    }
+
+    public override void _UnhandledInput(InputEvent @event)
+    {
+        if (@event.IsActionPressed("ui_accept") && GetNode<Control>("UI/Retry").Visible)
+        {
+            GetTree().ReloadCurrentScene();
+        }
+    }
+
     private void _on_mob_timer_timeout()
     {
         Mob mob = MobScene.Instantiate<Mob>();
@@ -18,5 +31,6 @@ public partial class Main : Node
     private void _on_player_hit()
     {
         GetNode<Timer>("MobTimer").Stop();
+        GetNode<Control>("UI/Retry").Show();
     }
 }
