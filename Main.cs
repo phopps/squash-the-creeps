@@ -12,6 +12,7 @@ public partial class Main : Node
         Vector3 playerPosition = GetNode<Player>("Player").Position;
         mob.Initialize(mobSpawnLocation.Position, playerPosition);
         AddChild(mob);
+        mob.Squashed += GetNode<ScoreLabel>("UI/ScoreLabel")._on_mob_squashed;
     }
 
     private void _on_player_hit()

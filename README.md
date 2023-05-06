@@ -19,9 +19,9 @@
 - [x] Hitbox with the Area node
 - [x] Ending the game
 - [x] Code checkpoint
-- [ ] **Score and replay**
-- [ ] Creating a UI theme
-- [ ] Keeping track of the score
+- [x] **Score and replay**
+- [x] Creating a UI theme
+- [x] Keeping track of the score
 - [ ] Retrying the game
 - [ ] Adding music
 - [ ] **Character animation**
