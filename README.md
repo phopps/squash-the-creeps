@@ -22,8 +22,8 @@
 - [x] **Score and replay**
 - [x] Creating a UI theme
 - [x] Keeping track of the score
-- [ ] Retrying the game
-- [ ] Adding music
+- [x] Retrying the game
+- [x] Adding music
 - [ ] **Character animation**
 - [ ] Using the animation editor
 - [ ] The float animation
