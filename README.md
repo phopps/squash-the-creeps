@@ -11,14 +11,14 @@
 - [x] **Spawning monsters**
 - [x] Creating the spawn path
 - [x] Spawning monsters randomly
-- [ ] **Jumping and squashing monsters**
-- [ ] Controlling physics interactions
-- [ ] Jumping
-- [ ] Squashing monsters
-- [ ] **Killing the player**
-- [ ] Hitbox with the Area node
-- [ ] Ending the game
-- [ ] Code checkpoint
+- [x] **Jumping and squashing monsters**
+- [x] Controlling physics interactions
+- [x] Jumping
+- [x] Squashing monsters
+- [x] **Killing the player**
+- [x] Hitbox with the Area node
+- [x] Ending the game
+- [x] Code checkpoint
 - [ ] **Score and replay**
 - [ ] Creating a UI theme
 - [ ] Keeping track of the score

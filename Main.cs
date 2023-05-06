@@ -13,4 +13,9 @@ public partial class Main : Node
         mob.Initialize(mobSpawnLocation.Position, playerPosition);
         AddChild(mob);
     }
+
+    private void _on_player_hit()
+    {
+        GetNode<Timer>("MobTimer").Stop();
+    }
 }
