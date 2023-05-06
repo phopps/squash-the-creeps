@@ -11,9 +11,9 @@
 - [x] **Spawning monsters**
 - [x] Creating the spawn path
 - [x] Spawning monsters randomly
-- [ ] **Jumping and squashing monsters**
-- [ ] Controlling physics interactions
-- [ ] Jumping
+- [x] **Jumping and squashing monsters**
+- [x] Controlling physics interactions
+- [x] Jumping
 - [ ] Squashing monsters
 - [ ] **Killing the player**
 - [ ] Hitbox with the Area node
