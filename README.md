@@ -24,8 +24,8 @@
 - [x] Keeping track of the score
 - [x] Retrying the game
 - [x] Adding music
-- [ ] **Character animation**
-- [ ] Using the animation editor
+- [x] **Character animation**
+- [x] Using the animation editor
 - [ ] The float animation
 - [ ] Animating the mobs
 - [ ] **Going further**
