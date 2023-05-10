@@ -22,10 +22,10 @@
 - [x] **Score and replay**
 - [x] Creating a UI theme
 - [x] Keeping track of the score
-- [ ] Retrying the game
-- [ ] Adding music
-- [ ] **Character animation**
-- [ ] Using the animation editor
+- [x] Retrying the game
+- [x] Adding music
+- [x] **Character animation**
+- [x] Using the animation editor
 - [ ] The float animation
 - [ ] Animating the mobs
 - [ ] **Going further**
