@@ -4,11 +4,11 @@
 [ext_resource type="Script" path="res://Player.cs" id="1_m6b45"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_w7ie8"]
-radius = 0.7
+radius = 1.00641
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_jiv40"]
 height = 0.177331
-radius = 1.0
+radius = 1.09987
 
 [sub_resource type="Animation" id="Animation_7in2y"]
 resource_name = "Float"
@@ -83,7 +83,7 @@ script = ExtResource("1_m6b45")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
 
 [node name="Collision" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.962385, 0)
 shape = SubResource("SphereShape3D_w7ie8")
 
 [node name="MobDetector" type="Area3D" parent="."]
