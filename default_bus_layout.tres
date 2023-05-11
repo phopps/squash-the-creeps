@@ -1,3 +1,10 @@
-[gd_resource type="AudioBusLayout" format=2]
+[gd_resource type="AudioBusLayout" load_steps=2 format=3 uid="uid://d2cnyd5wk7y1r"]
+
+[sub_resource type="AudioEffectStereoEnhance" id="AudioEffectStereoEnhance_svifu"]
+resource_name = "StereoEnhance"
+pan_pullout = 3.0
+surround = 0.3
 
 [resource]
+bus/0/effect/0/effect = SubResource("AudioEffectStereoEnhance_svifu")
+bus/0/effect/0/enabled = true
