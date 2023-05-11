@@ -26,7 +26,7 @@
 - [x] Adding music
 - [x] **Character animation**
 - [x] Using the animation editor
-- [ ] The float animation
-- [ ] Animating the mobs
-- [ ] **Going further**
-- [ ] Exploring the manual
+- [x] The float animation
+- [x] Animating the mobs
+- [x] **Going further**
+- [x] Exploring the manual

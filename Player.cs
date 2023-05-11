@@ -64,10 +64,11 @@ public partial class Player : CharacterBody3D
                 }
             }
         }
+
         Velocity = _targetVelocity;
+        MoveAndSlide();
         Node3D pivot = GetNode<Node3D>("Pivot");
         pivot.Rotation = new Vector3(Mathf.Pi / 6.0f * Velocity.Y / JumpImpulse, pivot.Rotation.Y, pivot.Rotation.Z);
-        MoveAndSlide();
     }
 
     private void Die()
